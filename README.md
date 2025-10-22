@@ -8,6 +8,7 @@
 ## Data Verification and validation
 Total_Row = 49,916
 No Null/Invalid Value
+'''sql 
 SELECT 
   COUNT(*) AS total_rows,
   COUNT(*) FILTER (WHERE num_passengers IS NULL) AS missing_passengers,
